@@ -1,6 +1,6 @@
 # steam-update-notifier
 
-Monitors Steam Apps and sends out Discord notifications when an update is spotted.
+Monitors Steam Apps and sends out Discord notifications and log messages when an update is spotted.
 
 ## Usage
 
