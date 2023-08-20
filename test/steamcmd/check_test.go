@@ -4,11 +4,9 @@ import (
 	"testing"
 
 	"github.com/ejedev/steam-update-notifier/internal/steamcmd"
-	"github.com/rs/zerolog"
 )
 
 func TestCheckChanges(t *testing.T) {
-	zerolog.SetGlobalLevel(zerolog.NoLevel)
 	apps := map[int]int{570: 0}
 	apps[570] = 0
 	result := steamcmd.CheckChanges(apps, "", false)
