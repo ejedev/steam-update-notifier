@@ -35,7 +35,6 @@ func main() {
 	} else {
 		interval = config.Interval
 	}
-	interval = 10
 	ticker := time.NewTicker(time.Duration(interval) * time.Second)
 
 	for range ticker.C {
