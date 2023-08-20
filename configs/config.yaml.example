@@ -1,0 +1,11 @@
+# Steam App ID's to check. You can find these at https://steamdb.info/
+# 730 is CSGO and 570 is Dota2.
+apps:
+  - 730
+  - 570
+# Discord webhook to output data to (if enabled.)
+discord:
+  enabled: true
+  webhook: https://urlhere.com/data/here
+# Probe interval in seconds. Any value less then 300 will be ignored.
+interval: 300
