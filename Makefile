@@ -8,7 +8,7 @@ clean:
 	go clean
 	rm bin/${BINARY_NAME}*
 test:
-	go test -v ./test/...
+	go test -v -coverpkg ./... ./test/...
 all:
 	GOOS=darwin GOARCH=arm64 go build -o bin/${BINARY_NAME}-darwin-arm64 cmd/steam-update-notifier/main.go
 	GOOS=linux GOARCH=arm64 go build -o bin/${BINARY_NAME}-linux-arm64 cmd/steam-update-notifier/main.go
