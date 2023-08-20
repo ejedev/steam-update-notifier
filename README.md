@@ -24,7 +24,7 @@ The minimum probe time is set at 300 seconds (5 minutes.) This is because the AP
 ### Binary
 If a release has been made, you can download a binary [here.](https://github.com/ejedev/steam-update-notifier/releases/latest)
 
-## Building
+### Building
 ```
 $ git clone https://github.com/ejedev/steam-update-notifier.git
 $ cd steam-update-notifier
