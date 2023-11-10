@@ -10,7 +10,7 @@ import (
 func CheckChanges(apps map[int]int, webhook string, enabled bool) map[int]int {
 	for key := range apps {
 		newChangeNumber := GetChangeNumber(key)
-		if apps[key] != newChangeNumber {
+		if (apps[key] != newChangeNumber) && (newChangeNumber != 0) {
 			apps[key] = newChangeNumber
 			log.Info().
 				Int("old", apps[key]).
